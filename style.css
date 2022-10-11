@@ -13,14 +13,15 @@ body{
     margin-top: 20rem;
 
 }
+.row{
+    display: flex;
+}
+
 .seat{
     background-color:cyan;
     height: 1rem;
     width: 1rem;
     margin: 3px;
-}
-.row{
-    display: flex;
 }
 .seat.booked{
     background-color: grey;
@@ -36,12 +37,12 @@ body{
 }
 .seat:not(.booked):hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.3);
+    border: 1px solid;
+    border-color: red;
+    border-radius: 15%;
 }
-.seat-hint :seat:not(.booked):hover{
-    cursor: default;
-    transform: scale(1);
-}
+                /* seat-hint section */
 .seat-hint{
     background-color: aquamarine;
     padding: 5px 10px;
@@ -60,12 +61,23 @@ body{
 .seat-hint li small{
     margin-left: 10px;
 }
-
-.screen{
-    background-color: blue;
-    height: 70px;
-    width: 100%;
-    margin: 15px 0;
-    transform: rotateX(-45 degree);
-    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+.seat-hint .seat:not(.booked):hover{
+    cursor: default;
+    transform: scale(1);
 }
+             /* screen section  starts*/
+.screen{
+    background-color: rgb(236, 217, 217);
+    color: rgb(112, 112, 198);
+    height: 70px;
+    width: 360px;
+    margin: -22px 0px 6px 0px;
+    transform: rotateX(56deg);
+    box-shadow: 0 3px 10px rgba(52, 51, 51, 0.75);
+}
+.screenBox{
+    perspective: 1001px;
+    margin-bottom: 10px;
+}
+        
+              /* screen section  ends*/
