@@ -1,2 +1,2 @@
 deployed 
-<a href="bookYourMovie.github.io">link </a> 
+<a href="https://ismailummer.github.io/bookYourMovie/">link </a> 
