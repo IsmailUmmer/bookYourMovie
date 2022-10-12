@@ -43,6 +43,7 @@ container.addEventListener('click',(e) => {
     userSelectedseat();
 }   
 );
+
 // when clicked paybtn 
 standard.addEventListener('click',(e) => {
     if (e.target.classList.contains('seat') && !e.target.classList.contains('booked')){
