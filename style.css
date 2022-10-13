@@ -94,6 +94,7 @@ body{
 .seat-hint .seat:not(.booked):hover{
     cursor: default;
     transform: scale(1);
+    border: none;
 }
              /* screen section  starts*/
 .screen{
