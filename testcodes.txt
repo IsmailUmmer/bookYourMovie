@@ -46,3 +46,18 @@
 //     booking(btn ,"selected", "booked");
 // }
 
+ //  e.target.classList.toggle(togglebooking());
+                // console.log(alreadyselectedseats);
+                
+                // e.target.classList.replace ("selected", "booked");
+
+
+
+
+                      // btn.onclick =() => {
+        //     //  e.target.classList.toggle(togglebooking());
+        //      for ( i=0;i<= e.length;i++){
+        //         console.log(e.length);
+        //      e.target.classList.replace ("selected", "booked");
+        //  }
+        // }
