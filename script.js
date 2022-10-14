@@ -42,6 +42,15 @@ standard.addEventListener('click', (e) => {
         }
     }
 });
+                    //  test code
+// ticket.addEventListener('change', function handleChange(event) {
+//     if (event.target.value === 'show') {
+//       box.style.visibility = 'visible';
+//     } else {
+//       box.style.visibility = 'hidden';
+//     }
+//   });
+
 // ticket rate for standard
 function userSelectedSeat() {
     const selectedseats = document.querySelectorAll('.row .seat.selected');
@@ -76,6 +85,6 @@ function useralreadyselectedseat() {
 // ticket value change notifier
 ticket.addEventListener('change', ticketcount)
 function ticketcount(e) {
-    ticketSelectedCount = parseInt(e.target.value)
+    ticketSelectedCount = parseInt(e.target.value);
     console.log(ticketSelectedCount);
 }
