@@ -11,3 +11,14 @@ closeButton.addEventListener('click', () => {
     mobileMenu.classList.remove('active');
     document.body.style.overflow = "visible";
 });
+
+
+
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

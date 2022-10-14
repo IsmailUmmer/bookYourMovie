@@ -46,7 +46,7 @@
                 </a>
             </nav> -->
             <div class="user-actions">
-                <div class="signin">Sign in</div>
+                <div class="signin" onclick="document.getElementById('id01').style.display='block'">Sign in</div>
             </div>
             <label class="openmenu">=
                 <svg fill="rgba(30,23,22,1)" width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -57,6 +57,39 @@
         </div>
     </header>
 
+    <!-- login section  -->
+
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
 
     <div class="recommended-movie">
         <div class="container" style="background-image: url(images/godfather.avif);">
@@ -170,7 +203,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="manmovi">
+            <div class="Copyright">
                 © Book your movie
             </div>
             <div class="text">
