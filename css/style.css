@@ -432,7 +432,7 @@ span.psw {
     width: 100%;
     min-height: 100vh;
     z-index: 30;
-    background: #000;
+    background: var(--backdrop-color);
     display: flex;
     align-items: center;
     justify-content: space-between;

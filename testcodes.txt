@@ -61,3 +61,18 @@
         //      e.target.classList.replace ("selected", "booked");
         //  }
         // }
+
+
+//  test code
+// ticket.addEventListener('change', function handleChange(event) {
+//     if (event.target.value === 'show') {
+//       box.style.visibility = 'visible';
+//     } else {
+//       box.style.visibility = 'hidden';
+//     }
+//   });
+
+// function bookedSeats{
+//     const selectedseats = document.querySelectorAll('.row .seat.booked');
+// }
+
