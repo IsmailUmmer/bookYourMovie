@@ -45,6 +45,7 @@ standard.addEventListener('click', (e) => {
         btn.onclick = () => {
             useralreadyselectedseat();
             userBookedSeat();
+            alertbox();
         }
     }
 });
@@ -129,4 +130,11 @@ function userSelectedTicket(){
 function ticketcount(e) {
     ticketSelectedCount = parseInt(e.target.value);
     console.log(ticketSelectedCount);
+}
+function alertbox() {
+  confirm("click ok to confirm your purchase");
+  if (confirm){
+    alert('payed Successfully');
+    window.location.href='/index.html';
+  }
 }
