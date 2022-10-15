@@ -33,9 +33,10 @@ premium.addEventListener('click', (e) => {
 container.addEventListener('click', (e) => {
     if (e.target.classList.contains('seat') && !e.target.classList.contains('booked')) {
         // console.log(e.target);
+        userSelectedTicket();
         e.target.classList.toggle('selected');
         userSelectedSeat();
-        userSelectedTicket();
+        
     }
 });
 
@@ -117,16 +118,51 @@ function useralreadyselectedseat() {
     })
 }
 function userSelectedTicket(){
-    const bookedSeats = document.querySelectorAll('.row .seat.selected');
-    const seatIndex = [...bookedSeats].map(function (seatI) {
+    const selectedseats = document.querySelectorAll('.row .seat.selected');
+    const seatIndex = [...selectedseats].map(function (seatI) {
         return [...seats].indexOf(seatI);
     });
     console.log(seatIndex);
+    seatIndex.push(3);
 
 }
+
     // ticket value change notifier
      ticket.addEventListener('change', ticketcount)
 function ticketcount(e) {
     ticketSelectedCount = parseInt(e.target.value);
-    console.log(ticketSelectedCount);
-}
+    // console.log(ticketSelectedCount);
+    if(ticketSelectedCount !=null && ticketSelectedCount >0 ){
+        return ticketSelectedCount;
+
+    }
+ }
+
+// function userSelectedTicket() {
+//     const bookedSeats = document.querySelectorAll('.row .seat.selected');
+//     const seatIndex = [...bookedSeats].map(function (seatI) {
+//         return [...seats].indexOf(seatI);
+//     });
+//     // console.log(seatIndex);
+//     console.log(globalticket);
+//     // seatIndex.push(3);
+//     window.seatselectedIndex = seatIndex;
+//     // console.log(seatselectedIndex);
+// }
+// var globalticket;
+
+// // function refreshselected(){
+// //     for (i=0; i > globalticket.length;i++){
+// //         seatselectedIndex.push(globalticket+[i]);
+// //         console.log(seatIndex);
+// //     }
+// // }
+// // ticket value change notifier
+// ticket.addEventListener('change', ticketcount)
+// function ticketcount(e) {
+//     ticketSelectedCount = parseInt(e.target.value);
+//     // console.log(ticketSelectedCount);
+//     // window.globalticket = ticketSelectedCount;
+//     ticketSelectedCount = globalticket;
+
+// }
