@@ -25,6 +25,7 @@ premium.addEventListener('click', (e) => {
         btn.onclick = () => {
             useralreadyselectedPremiumseat();
             userBookedPremiumSeat();
+            alertbox();
         }
     }
 });
