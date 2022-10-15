@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,12 +14,13 @@
     --secondary-color: #f9fcff;
     --backdrop-color: #fff;
     --text-color: #261c1c;
-   
+
 }
 
 body {
     background-color: var(--secondary-color);
 }
+
 .header {
     width: 100%;
     height: 85px;
@@ -37,6 +39,7 @@ body {
     padding-right: 10px;
     padding-left: 10px;
 }
+
 .header .container .logo {
     color: var(--text-color);
     font-size: 25px;
@@ -45,7 +48,7 @@ body {
     cursor: pointer;
 }
 
-.header .container   label{
+.header .container label {
     width: 32px;
     height: 32px;
     opacity: 0;
@@ -72,21 +75,24 @@ body {
     margin-right: 35px;
     transition: 150ms color ease-in-out;
 }
+
 .header .container .menu a svg {
     margin-bottom: 5px;
 }
 
 .header .container .menu a:hover {
-    color:  var(--primary-color);
+    color: var(--primary-color);
 }
+
 .header .container .menu a svg {
     transition: 150ms fill ease-in-out;
 }
 
 .header .container .menu a:hover svg {
-    fill: var(--primary-color)!important;
+    fill: var(--primary-color) !important;
 }
-.header .container  .user-actions .signin {
+
+.header .container .user-actions .signin {
     width: 120px;
     height: 45px;
     background-color: #f34c55;
@@ -99,37 +105,109 @@ body {
     font-weight: 600;
     transition: 200ms background-color ease-in-out;
 }
-.header .container  .user-actions .signin:hover {
+
+.header .container .user-actions .signin:hover {
     background-color: #f34c54e1;
 }
 
 /* login section */
 
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
     padding-top: 60px;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
+}
+
+/* Modal Content/Box */
+.modal-content {
     background-color: #fefefe;
-    margin: 5px auto; /* 15% from the top and centered */
+    margin: 5px auto;
+    /* 15% from the top and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
+    width: 27%;
+    /* Could be more or less, depending on screen size */
+}
+
+.modal-content .imgcontainer b {
+    padding-bottom: 10px;
+}
+
+/* The Close Button */
+.close {
     /* Position it in the top right corner outside of the modal */
     position: absolute;
     right: 25px;
@@ -137,33 +215,43 @@ body {
     color: #000;
     font-size: 35px;
     font-weight: bold;
-  }
-  
-  /* Close button on hover */
-  .close:hover,
-  .close:focus {
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
     color: red;
     cursor: pointer;
-  }
-  
-  /* Add Zoom Animation */
-  .animate {
+}
+
+/* Add Zoom Animation */
+.animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-  }
-  
-  @keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-  }
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
 
 
-.receommended-movie{
+.receommended-movie {
     width: 100%;
     height: 515px;
     position: relative;
@@ -171,7 +259,7 @@ body {
 
 }
 
-.recommended-movie .container{
+.recommended-movie .container {
     width: 1200px;
     height: 500px;
     position: relative;
@@ -186,6 +274,7 @@ body {
     cursor: pointer;
     overflow: hidden;
 }
+
 .recommended-movie .container::before {
     content: '';
     width: 1200px;
@@ -198,20 +287,21 @@ body {
 
 }
 
-.recommended-movie .container .subtitle{
+.recommended-movie .container .subtitle {
     position: absolute;
     bottom: 50px;
     left: 50px;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
-    color: var(--backdrop-color)!important;
+    color: var(--backdrop-color) !important;
 }
 
-.recommended-movie .container .subtitle .title{
+.recommended-movie .container .subtitle .title {
     margin-bottom: 10px;
     font-size: 40px;
 }
-.recommended-movie .container .subtitle .about{
+
+.recommended-movie .container .subtitle .about {
     font-size: 18px;
 }
 
@@ -243,7 +333,7 @@ body {
 }
 
 .movie-types .container h5 a {
-    color:var(--text-color);
+    color: var(--text-color);
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     text-decoration: none;
@@ -265,7 +355,7 @@ body {
     justify-content: space-evenly;
 }
 
-.movie-types .container .wrapper .movie{
+.movie-types .container .wrapper .movie {
     width: 204px;
     height: 336px;
     background-color: #3d3c44;
@@ -276,7 +366,8 @@ body {
     background-size: cover;
     position: relative;
 }
-.movie-types .container .wrapper .movie::before{
+
+.movie-types .container .wrapper .movie::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -288,6 +379,7 @@ body {
     transition: 200ms opacity ease-in-out;
     opacity: 0;
 }
+
 .movie-types .container .wrapper .movie:hover::before {
     opacity: 1;
 }
@@ -312,17 +404,18 @@ body {
     flex-direction: column;
     padding: 5px;
 }
+
 .footer .container .copyright {
     margin-bottom: 5px;
     font-size: 20px;
-    color: var(--primary-color); 
+    color: var(--primary-color);
 
 }
 
 .footer .container .text {
     margin-bottom: 10px;
     font-size: 18.5px;
-    
+
 }
 
 
@@ -367,6 +460,7 @@ body {
     font-size: 15px;
     margin-top: 35px;
 }
+
 .mobile-menu .menu a:first-child {
     margin-top: 0;
 }
@@ -376,10 +470,11 @@ body {
 }
 
 .mobile-menu .menu a:hover {
-    color:  var(--primary-color);
+    color: var(--primary-color);
 }
+
 .mobile-menu .menu a:hover svg {
-    fill: var(--primary-color)!important;
+    fill: var(--primary-color) !important;
 }
 
 .mobile-menu .head {
@@ -399,7 +494,8 @@ body {
     justify-content: space-between;
 
 }
-.mobile-menu  .user-actions .signin {
+
+.mobile-menu .user-actions .signin {
     width: 120px;
     height: 45px;
     background-color: #f34c55;
@@ -413,25 +509,30 @@ body {
     transition: 200ms background-color ease-in-out;
     margin-bottom: 40px;
 }
-.mobile-menu  .user-actions .signin:hover {
+
+.mobile-menu .user-actions .signin:hover {
     background-color: #f34c54e1;
 }
 
 .mobile-menu .head label {
     width: 32px;
     height: 32px;
-    
+
 }
+
 @media only screen and (max-width: 1200px) {
     .header .container {
         width: 1000px;
     }
+
     .recommended-movie .container {
         width: 1000px;
     }
+
     .movie-types .container {
         width: 1000px;
     }
+
     .movie-types .container .wrapper .movie:nth-child(5) {
         display: none;
     }
@@ -439,28 +540,32 @@ body {
     .footer .container {
         width: 1000px;
     }
-  }
+}
 
 
-  @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .header .container {
         width: 800px;
     }
+
     .recommended-movie .container {
         width: 800px;
     }
+
     .movie-types .container {
         width: 800px;
     }
+
     .movie-types .container .wrapper .movie:nth-child(4) {
         display: none;
     }
+
     .footer .container {
         width: 800px;
     }
-  }
+}
 
-  @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .header .container {
         width: 600px;
     }
@@ -468,35 +573,43 @@ body {
     .header .container .menu {
         display: none;
     }
+
     .header .container .user-actions {
         display: none;
     }
-    .header .container   label{
+
+    .header .container label {
         opacity: 1;
         visibility: visible;
         display: block;
     }
+
     .recommended-movie .container {
         width: 600px;
     }
+
     .recommended-movie .container {
         height: 450px;
     }
+
     .movie-types .container {
         width: 600px;
     }
-    .movie-types .container .wrapper  {
+
+    .movie-types .container .wrapper {
         justify-content: space-around;
     }
+
     .movie-types .container .wrapper .movie:nth-child(3) {
         display: none;
     }
+
     .footer .container {
         width: 600px;
     }
-  }
+}
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .header .container {
         width: 550px;
     }
@@ -504,33 +617,40 @@ body {
     .header .container .menu {
         display: none;
     }
+
     .recommended-movie .container {
         width: 550px;
     }
+
     .recommended-movie .container {
         height: 400px;
-    
+
     }
+
     .recommended-movie .container .subtitle .title {
         font-size: 35px;
-    
+
     }
+
     .movie-types .container {
         width: 550px;
     }
-    .movie-types .container .wrapper  {
+
+    .movie-types .container .wrapper {
         justify-content: space-around;
     }
+
     .movie-types .container .wrapper .movie:nth-child(3) {
         display: none;
     }
+
     .footer .container {
         width: 550px;
     }
-  }
+}
 
 
-  @media only screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) {
     .header .container {
         width: 500px;
     }
@@ -538,38 +658,46 @@ body {
     .header .container .menu {
         display: none;
     }
+
     .recommended-movie .container {
         width: 500px;
     }
+
     .recommended-movie .container {
         height: 400px;
-    
+
     }
-    .recommended-movie .container .subtitle  {
+
+    .recommended-movie .container .subtitle {
         left: 40px;
         bottom: 40px;
-    
+
     }
+
     .recommended-movie .container .subtitle .title {
         font-size: 35px;
-    
+
     }
+
     .movie-types .container {
         width: 500px;
     }
-    .movie-types .container .wrapper  {
+
+    .movie-types .container .wrapper {
         justify-content: space-around;
     }
+
     .movie-types .container .wrapper .movie:nth-child(3) {
         display: none;
     }
+
     .footer .container {
         width: 500px;
     }
-  }
+}
 
 
-  @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     .header .container {
         width: 450px;
     }
@@ -577,43 +705,52 @@ body {
     .header .container .menu {
         display: none;
     }
+
     .recommended-movie .container {
         width: 450px;
     }
+
     .recommended-movie .container {
         height: 350px;
-    
+
     }
-    .recommended-movie .container .subtitle  {
+
+    .recommended-movie .container .subtitle {
         left: 40px;
         bottom: 40px;
-    
+
     }
+
     .recommended-movie .container .subtitle .title {
         font-size: 30px;
-    
+
     }
+
     .movie-types .container {
         width: 450px;
     }
-    .movie-types .container .wrapper  {
-        justify-content: space-between!important;
+
+    .movie-types .container .wrapper {
+        justify-content: space-between !important;
     }
+
     .movie-types .container .wrapper .movie {
         width: 210px;
         height: 320px;
     }
+
     .movie-types .container .wrapper .movie:nth-child(3) {
         display: none;
     }
+
     .footer .container {
         width: 450px;
     }
-  }
+}
 
 
 
-  @media only screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
     .header .container {
         width: 400px;
     }
@@ -621,46 +758,56 @@ body {
     .header .container .menu {
         display: none;
     }
+
     .recommended-movie .container {
         width: 400px;
     }
+
     .recommended-movie .container {
         height: 300px;
-    
+
     }
-    .recommended-movie .container .subtitle  {
+
+    .recommended-movie .container .subtitle {
         left: 40px;
         bottom: 40px;
-    
+
     }
+
     .recommended-movie .container .subtitle .title {
         font-size: 30px;
-    
+
     }
+
     .movie-types .container {
         width: 400px;
     }
-    .movie-types .container .wrapper  {
+
+    .movie-types .container .wrapper {
         justify-content: space-around;
     }
+
     .movie-types {
         height: 380px;
     }
+
     .movie-types .container .wrapper .movie {
         width: 190px;
         height: 300px;
     }
+
     .movie-types .container .wrapper .movie:nth-child(3) {
         display: none;
     }
+
     .footer .container {
         width: 400px;
     }
-  }
+}
 
 
 
-  @media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     .header .container {
         width: 350px;
     }
@@ -668,43 +815,53 @@ body {
     .header .container .menu {
         display: none;
     }
+
     .recommended-movie .container {
         width: 350px;
     }
+
     .recommended-movie .container {
         height: 300px;
-    
+
     }
-    .recommended-movie .container .subtitle  {
+
+    .recommended-movie .container .subtitle {
         left: 30px;
         bottom: 30px;
-    
+
     }
+
     .recommended-movie .container .subtitle .title {
         font-size: 25px;
-    
+
     }
 
     .recommended-movie .container .subtitle .about {
         font-size: 16px;
-    
+
     }
+
     .movie-types .container {
         width: 350px;
     }
-    .movie-types .container .wrapper  {
+
+    .movie-types .container .wrapper {
         justify-content: space-around;
     }
+
     .movie-types {
         height: 330px;
     }
+
     .movie-types .container h5 {
         font-size: 20px;
     }
+
     .movie-types .container .wrapper .movie {
         width: 170px;
         height: 275px;
     }
+
     .movie-types .container .wrapper .movie:nth-child(3) {
         display: none;
     }
@@ -712,10 +869,10 @@ body {
     .footer .container {
         width: 350px;
     }
-  }
+}
 
 
-  @media only screen and (max-width: 350px) {
+@media only screen and (max-width: 350px) {
     .header .container {
         width: 320px;
     }
@@ -723,47 +880,58 @@ body {
     .header .container .menu {
         display: none;
     }
+
     .recommended-movie .container {
         width: 320px;
     }
+
     .recommended-movie .container {
         height: 300px;
-    
+
     }
-    .recommended-movie .container .subtitle  {
+
+    .recommended-movie .container .subtitle {
         left: 30px;
         bottom: 30px;
-    
+
     }
+
     .recommended-movie .container .subtitle .title {
         font-size: 25px;
-    
+
     }
 
     .recommended-movie .container .subtitle .about {
         font-size: 16px;
-    
+
     }
+
     .movie-types .container {
         width: 320px;
     }
-    .movie-types .container .wrapper  {
+
+    .movie-types .container .wrapper {
         justify-content: space-around;
     }
+
     .movie-types {
         height: 310px;
     }
+
     .movie-types .container h5 {
         font-size: 18px;
     }
+
     .movie-types .container .wrapper .movie {
         width: 155px;
         height: 245px;
     }
+
     .movie-types .container .wrapper .movie:nth-child(3) {
         display: none;
     }
+
     .footer .container {
         width: 320px;
     }
-  }
+}
