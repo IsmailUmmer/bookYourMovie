@@ -1,4 +1,4 @@
-<h1>Simple website for booking movie tickets <h1>
+<h1>Simple website for booking movie tickets </h1>
 
 deployed 
 <a href="https://ismailummer.github.io/bookYourMovie/">link </a> 
